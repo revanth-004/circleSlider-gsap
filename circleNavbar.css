@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+#circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+  left: -180vh;
+  top: 50%;
+  transform: translate(0%, -50%) rotate(100deg);
+  width: 200vh;
+  height: 200vh;
+  border: 2px solid #1f1f1f;
+}
+
+.stripe {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 60px;
+  transform-origin: 0% 50%;
+}
+
+.str1 {
+  transform: translate(0, -50%) rotate(-20deg);
+}
+.str2 {
+  transform: translate(0, -50%) rotate(-10deg);
+}
+
+.str4 {
+  transform: translate(0, -50%) rotate(10deg);
+}
+.str5 {
+  transform: translate(0, -50%) rotate(20deg);
+}
+.str6 {
+  transform: translate(0, -50%) rotate(30deg);
+}
+
+.first {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.smcircle {
+  position: absolute;
+  right: -0.3vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: #777;
+}
+.second h4,
+h6 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(208, 136, 248) 0px,
+    rgb(208, 136, 248) 98px,
+    rgb(237, 183, 253) 98px,
+    rgb(237, 183, 253) 141px,
+    rgb(252, 206, 255) 141px,
+    rgb(252, 206, 255) 238px,
+    rgb(222, 159, 251) 238px,
+    rgb(222, 159, 251) 267px,
+    rgb(178, 89, 244) 267px,
+    rgb(178, 89, 244) 363px,
+    rgb(193, 112, 246) 363px,
+    rgb(193, 112, 246) 479px
+  );
+}
+
+.second {
+  opacity: 0.4;
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.second h4 {
+  font-size: 2.5vw;
+}
+.second h6 {
+  font-size: 1.5vw;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+#panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 5%;
+  height: 20%;
+}
+
+.mncircle {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+  background-color: #fff;
+  opacity: 0.2;
+}
